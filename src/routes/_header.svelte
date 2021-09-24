@@ -27,16 +27,24 @@
   class="h-16 w-full px-6 flex flex-row items-center justify-between static border-b-2"
 >
   <NamespaceSelect />
-  <button
-    on:click={() => (showMenu = !showMenu)}
-    class="menu focus:outline-none focus:shadow-solid w-8 h-8"
-  >
-    {#if user?.picture}
-      <img src={user.picture} alt={user.name} class="rounded-full" />
-    {:else}
-      <Icon src={User} class="rounded-full" />
-    {/if}
-  </button>
+  <div class="flex items-center justify-center">
+    <a
+      class="block text-sm font-medium text-purple-400 hover:text-purple-600"
+      href="https://github.com/temporalio/web/issues/new/choose"
+      >Report Bug/Give Feedback</a
+    >
+
+    <button
+      on:click={() => (showMenu = !showMenu)}
+      class="menu focus:outline-none focus:shadow-solid w-8 h-8"
+    >
+      {#if user?.picture}
+        <img src={user.picture} alt={user.name} class="rounded-full" />
+      {:else}
+        <Icon src={User} class="rounded-full" />
+      {/if}
+    </button>
+  </div>
 
   {#if showMenu}
     <div
