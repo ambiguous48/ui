@@ -20,7 +20,7 @@
 </script>
 
 {#if show}
-  <section class={`block leading-10 text-center ${severity}`}>
+  <section class={`block leading-10 text-center ${severity}`} data-cy="banner">
     <a
       href={`https://github.com/temporalio/temporal/releases/tag/v${$cluster.versionInfo.recommended.version}`}
       target="_blank"

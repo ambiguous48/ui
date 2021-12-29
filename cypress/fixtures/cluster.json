@@ -1,0 +1,32 @@
+{
+  "supportedClients": {
+    "temporal-cli": "<2.0.0",
+    "temporal-go": "<2.0.0",
+    "temporal-java": "<2.0.0",
+    "temporal-server": "<2.0.0"
+  },
+  "serverVersion": "1.11.1",
+  "clusterId": "815447eb-142f-459e-b9f8-44668d90d41a",
+  "versionInfo": {
+    "current": {
+      "version": "1.11.1",
+      "releaseTime": "2021-07-19T23:00:00Z",
+      "notes": ""
+    },
+    "recommended": {
+      "version": "1.11.2",
+      "releaseTime": "2021-07-22T23:00:00Z",
+      "notes": ""
+    },
+    "instructions": "",
+    "alerts": [
+      {
+        "message": "v1.11.1 contains a serious issue. Please upgrade to v1.11.2 or newer versions",
+        "severity": "High"
+      }
+    ],
+    "lastUpdateTime": "2021-12-29T03:48:33.108827739Z"
+  },
+  "clusterName": "active",
+  "historyShardCount": 4
+}
