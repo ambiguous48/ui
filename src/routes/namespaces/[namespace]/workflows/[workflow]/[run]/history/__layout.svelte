@@ -77,6 +77,7 @@
         <ToggleButtons>
           <ToggleButton
             icon={faStream}
+            noScroll
             base={routeForEventHistory(routeParameters('summary'))}
             href={routeForEventHistoryItem(
               routeParameters('summary', $page.params.eventId || '1'),
@@ -84,11 +85,13 @@
           >
           <ToggleButton
             icon={faLayerGroup}
+            noScroll
             href={routeForEventHistory(routeParameters('compact'))}
             >Compact</ToggleButton
           >
           <ToggleButton
             icon={faCode}
+            noScroll
             href={routeForEventHistory(routeParameters('json'))}
             >JSON</ToggleButton
           >

@@ -12,6 +12,7 @@
   export let scale = 1;
   export let href = '#';
   export let base = href;
+  export let noScroll = false;
 </script>
 
 <a
@@ -20,6 +21,7 @@
   class:active={$page.url.pathname.includes(base)}
   class:group
   href={appendQueryParameters(href, $page.url.searchParams)}
+  sveltekit:noscroll={noScroll}
   on:click
 >
   {#if icon}
